@@ -1,0 +1,193 @@
+$black-color: #000100;
+$white-color: #F8F8F8;
+$primary-color: #394259;
+$secondary-color: #8d99ae;
+$extra: #DE8F6E;
+
+*{
+  font-family: 'Clash Display', sans-serif;
+}
+
+.header{
+    text-align: center;
+    .logo{
+      width: 250px; 
+      height: 200px; 
+    }
+}
+h1{
+  font-family: 'Stardom', sans-serif;
+}
+.navbar{
+    background-color: $primary-color;
+    a{
+      color: white;
+      &:hover{
+        color: white;
+      }
+    }
+}
+@mixin button-styles{
+  background-color: $primary-color;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: transform 0.4s;
+  margin-top: 10px;
+  &:hover{
+      background-color: $secondary-color;
+      color: #000100;
+  }
+  &:active{
+    background-color: $primary-color !important;
+  }
+}
+.section-home{
+    background-image: url(../images/cafe-header-img.jpg);
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+      color: white;
+    }
+    .button-redg{
+      @include button-styles;
+  }
+}
+
+// MENU SECTION
+#menu-items{
+  background-color: $white-color;
+}
+.card-img-top{
+  border-radius: 50px;
+  padding: 20px;
+}
+.col{
+  .card{
+    border: none ;
+    background-color: $white-color;
+    transition: transform 0.2s;
+    &:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    .card-body{
+      margin-top: -15px;
+    }
+  }
+}
+.b-div{
+  .btn-primary{
+@include button-styles;
+}
+}
+.modal-header {
+  border: none !important;
+  h1{
+    font-family: 'Clash Display', sans-serif;
+  }
+}
+.modal-footer {
+  border: none !important;
+  .btn-secondary{
+    @include button-styles;
+  }
+}
+// ABOUT SECTION
+.section-about {
+    background: $secondary-color;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .row {
+      align-items: center;
+    }
+    .img-box {
+      display: flex;
+      justify-content: center;
+    }
+      img {
+        width: 100%;
+        max-width: 445px;
+        position: relative;
+        z-index: 2;
+      }
+      .detail-box {
+        p {
+          margin-top: 15px;
+          font-size: 20px;
+        }
+        @media only screen and (max-width: 768px){
+          text-align: center; 
+          padding-bottom: 50px;
+      }
+      }
+    }
+    // Carousle 
+    .c-item{
+      height: 650px;
+      font-size: 18px;
+      @media only screen and (max-width: 768px){
+      height: auto;
+    }
+      .c-img{
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.6)
+      }
+    }
+    // Contact Section
+    #contact{
+      background-color: $white-color;
+    }
+    
+    .contact-section {
+      background: $white-color;
+      padding: 20px;
+      text-align: center;
+      width: 400px; 
+      margin: 0 auto; 
+      @media screen and (max-width:768px) {
+        width: auto;
+      }
+      h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid $primary-color;
+    color: white;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+  textarea {
+    height: 150px;
+}
+  button {
+    @include button-styles;
+}
+  }
+  // Footer Section
+  .footer-section{
+    background-color: $primary-color;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }

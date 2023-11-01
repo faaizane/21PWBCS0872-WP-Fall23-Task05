@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400&f[]=stardom@400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <title>Café De Peshawar</title>
+    <link rel="shortcut icon" href="Images/cafe_logo_2.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img src="images/cafe_logo_2.png" alt="Café De Peshawar Logo" class="logo">
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" style="color: white;" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu-items">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="home" class="container-fluid p-4 section-home ">
+        <h1>Welcome to Café De Peshawar</h1>
+        <p style="color: white;">Enjoy the finest cuisine and coffee in town!</p>
+        <a class="btn btn-primary button-redg" href="#menu-items" role="button">Explore Menu</a>
+    </div>
+
+    <!-- Menu Section -->
+<section id="menu-items">
+    <div class="container py-5" >
+        <h1  class="text-center">Our Menu</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/sandwich.jpg" class="card-img-top h-100" alt="first menu iten">
+                    <div class="card-body">
+                    <h5 class="card-title">Egg and Cheese Sandwich</h5>
+                    <p class="card-text">Try our handcrafted, gourmet sandwich, bursting with unique flavors.</p>                  
+                    </div>
+                    <div class="d-flex justify-content-around  mb-5 b-div">
+                        <h3>RS 449</h3>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup-modal">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                  <img src="images/pancake.jpg" class="card-img-top h-100" alt="first menu iten">
+                  <div class="card-body">
+                  <h5 class="card-title">Pancake</h5>
+                  <p class="card-text">Indulge in a stack of golden, fluffy pancakes, served with rich butter.</p>                  
+                  </div>
+                  <div class="d-flex justify-content-around  mb-5 b-div">
+                      <h3>RS 599</h3>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup-modal">Add to cart</button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+                <img src="images/burger.jpg" class="card-img-top h-100" alt="first menu iten">
+                <div class="card-body">
+                <h5 class="card-title">Beef Burger</h5>
+                <p class="card-text">Savor our gourmet, handcrafted burger, made with juicy prime beef and char-grilled to perfection.</p>                  
+                </div>
+                <div class="d-flex justify-content-around  mb-5 b-div">
+                    <h3>RS 899</h3>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup-modal">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+              <img src="images/pizza.jpg" class="card-img-top h-100" alt="first menu iten">
+              <div class="card-body">
+              <h5 class="card-title">Italian Pizza</h5>
+              <p class="card-text">Enjoy our artisan, wood-fired pizza, loaded with deliciously thin crust and extra toppings.</p>                  
+              </div>
+              <div class="d-flex justify-content-around  mb-5 b-div">
+                  <h3>RS 1199</h3>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup-modal">Add to cart</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+            <img src="images/salad.jpg" class="card-img-top h-100" alt="first menu iten">
+            <div class="card-body">
+            <h5 class="card-title">Salad</h5>
+            <p class="card-text">Try our crisp, refreshing salad, bursting with flavor and made from locally sourced ingredients.</p>                  
+            </div>
+            <div class="d-flex justify-content-around  mb-5 b-div">
+                <h3>RS 499</h3>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup-modal">Add to cart</button>          
+                </div>
+        </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+          <img src="images/coffee.jpg" class="card-img-top h-100" alt="first menu iten">
+          <div class="card-body">
+          <h5 class="card-title">Coffee</h5>
+          <p class="card-text">Indulge in our aromatic, barista-crafted coffee with rich and bold flavors.</p>                  
+          </div>
+          <div class="d-flex justify-content-around  mb-5 b-div" >
+              <h3>RS 299</h3>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup-modal">Add to cart</button>
+          </div>
+      </div>
+  </div>
+
+        </div>
+    </div>
+  </section>
+
+    <!-- Modal -->
+<div class="modal fade" id="popup-modal" tabindex="-1" aria-labelledby="popup-modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Thank you! for shopping with us.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- About Us Section -->
+  <div id="about" class="section-about">
+    <div class="container">
+      <div class="row" style="display: flex; flex-direction: row;">
+      <div class="col-md-6">
+        <div class="img-box">
+          <img src="images/about-dish.png" alt="Picture of a food" >
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="detail-box">
+          <h1>About Us</h1>
+          <p>We are Café De Peshawar, a cozy café serving the best coffee and meals in town. Visit us today and experience our delightful menu!</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+    <!--Our Team section-->
+  <div class="our-team">
+
+    <div id="Team-carousel" class="carousel  slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#Team-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#Team-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="Team-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="images/emp-1.jpg" class="d-block w-100 img-fluid c-img" alt="Manager">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Manager</h5>
+            <p>The manager of Cafe de Peshawar exemplifies exceptional dedication and leadership in creating a memorable dining experience.</p>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/emp-2.jpg" class="d-block w-100 img-fluid c-img" alt="Chef">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Chef</h5>
+            <p>The chef is a culinary magician, crafting delicious dishes that are a true delight to the senses.</p>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/emp-3.jpg" class="d-block w-100 img-fluid c-img" alt="Barista">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Barista</h5>
+            <p>The coffee maker at the cafe is the unsung hero, skillfully brewing the perfect cup of coffee that brightens up every customer's day</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#Team-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#Team-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  
+    <!-- Contact Us Section -->
+    <section id="contact">
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Contact us!</p>
+        <!-- Contact Form -->
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-section">
+        <p>&copy; 2023 Café De Peshawar</p>
+    </div>
+    <!-- Bootstrap JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script></body>
+</body>
+</html>
